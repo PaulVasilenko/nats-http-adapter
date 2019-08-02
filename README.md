@@ -1,7 +1,7 @@
 
 # NATS HTTP Adapter
 
-That is currently in Alpha and lack of a lo
+### That is currently in Alpha and lack of a everything you need, containing only what i need in current state
 
 This software is made to make proxy API to send NATS messages through HTTP for testing purposes.
 
