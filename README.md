@@ -13,7 +13,7 @@ The main idea is to proxy HTTP requests to NATS to existing API testing tools (i
 First install command
 
 ```
-go get github.com/paulvasilenko/nats-http-adapter
+GO111MODULE=on go get github.com/paulvasilenko/nats-http-adapter
 ```
 
 After create `config.yaml` file with following structure
@@ -23,7 +23,7 @@ NATS:
   Endpoint: gnats://endpoint:4222
   RequestTimeout: 500ms # Default is 1s
 HTTP:
-  Port: 85 # Default is 80
+  Port: 8085 # Default is 80
 ```
 
 And run command
@@ -35,7 +35,7 @@ nats-http-adapter -c path/to/config.yaml
 
 ## Usage
 
-Requests should be sent to endpoint `127.0.0.1:85/nats` if you run it locally. Change address from localhost to yours if necessary.
+Requests should be sent to endpoint `127.0.0.1:8085/nats` if you run it locally. Change address from localhost to yours if necessary.
 
 ### Request
 
